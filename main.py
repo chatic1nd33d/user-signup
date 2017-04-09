@@ -19,19 +19,19 @@ def buildpage(username, optional_email, username_error, password_error, verify_e
     header = "<h2>Signup</h2>"
     username_label = "<label>Username: </label>"
     username_text_box = "<input type='text' name='username' value='%s' />"%username
-    username_error = "%s"%username_error
+    username_error = "<label class='error' style='color:red'>"+"%s"%username_error+"</label>"
 
     password_label = "<label>Password: </label>"
     password_text_box ="<input type='password' name='password' required/>"
-    password_error = "%s"%password_error
+    password_error = "<label class='error' style='color:red'>"+"%s"%password_error+"</label>"
 
     verify_password_label = "<label>Verify Password: </label>"
     verify_password_text_box = "<input type='password' name='verify_password' required/>"
-    verify_error = "%s"%verify_error
+    verify_error = "<label class='error' style='color:red'>"+"%s"%verify_error+"</label>"
 
     optional_email_label = "<label>Email (Optional): </label>"
     optional_email_text_box = "<input type='text' name='optional_email' value='%s' required/>"%optional_email
-    email_error = "%s"%email_error
+    email_error = "<label class='error' style='color:red'>"+"%s"%email_error+"</label>"
 
     submit_button = "<input type='submit' value='Submit'>"
 
